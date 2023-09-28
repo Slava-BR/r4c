@@ -6,8 +6,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 
 from robots.excel import to_excel, PATH_TEMP_FILE
-from robots.models import Robot
 from robots.validator import data_is_valid
+from robots.signals import *
 
 
 @require_POST
